@@ -43,21 +43,6 @@ add_action( 'init', function () {
 		'rewrite'           => array( 'slug' => 'product-line' ),
 		'show_admin_column' => true,
 	) );
-
-	register_post_type( 'billodig_video', array(
-		'labels' => array(
-			'name'          => 'Videos',
-			'singular_name' => 'Video',
-			'add_new_item'  => 'Add New Video',
-			'edit_item'     => 'Edit Video',
-		),
-		'public'      => true,
-		'has_archive' => false,
-		'publicly_queryable' => false,
-		'rewrite'     => false,
-		'menu_icon'   => 'dashicons-video-alt3',
-		'supports'    => array( 'title', 'thumbnail' ),
-	) );
 } );
 
 /**
@@ -112,24 +97,24 @@ add_action( 'acf/init', function () {
 					array( 'key' => 'field_tech_param_value', 'name' => 'value', 'label' => 'Value', 'type' => 'text' ),
 				),
 			),
+			array(
+				'key'          => 'field_product_videos',
+				'name'         => 'product_videos',
+				'label'        => 'Work Videos',
+				'type'         => 'repeater',
+				'instructions' => 'Work/operation videos for this specific model — shown on its product page, not as a separate site section.',
+				'layout'       => 'table',
+				'button_label' => 'Add video',
+				'sub_fields'   => array(
+					array( 'key' => 'field_product_video_url', 'name' => 'video_url', 'label' => 'Video URL', 'type' => 'url', 'instructions' => 'YouTube/Vimeo link or a direct video file URL.' ),
+					array( 'key' => 'field_product_video_thumbnail', 'name' => 'thumbnail', 'label' => 'Thumbnail', 'type' => 'image', 'return_format' => 'url', 'preview_size' => 'medium' ),
+					array( 'key' => 'field_product_video_caption_zh', 'name' => 'caption_zh', 'label' => 'Caption (Chinese)', 'type' => 'text', 'instructions' => 'e.g. 作业视频' ),
+				),
+			),
 		),
 		'location' => array(
 			array(
 				array( 'param' => 'post_type', 'operator' => '==', 'value' => 'product' ),
-			),
-		),
-	) );
-
-	acf_add_local_field_group( array(
-		'key'    => 'group_billodig_video',
-		'title'  => 'Video',
-		'fields' => array(
-			array( 'key' => 'field_video_url', 'name' => 'video_url', 'label' => 'Video URL', 'type' => 'url', 'instructions' => 'YouTube/Vimeo link or a direct video file URL.' ),
-			array( 'key' => 'field_video_caption_zh', 'name' => 'caption_zh', 'label' => 'Caption (Chinese)', 'type' => 'text', 'instructions' => 'e.g. 作业视频' ),
-		),
-		'location' => array(
-			array(
-				array( 'param' => 'post_type', 'operator' => '==', 'value' => 'billodig_video' ),
 			),
 		),
 	) );

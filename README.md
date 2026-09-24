@@ -1,10 +1,10 @@
 # Billodig WordPress Theme
 
-Standalone WordPress theme for **billodig.com**, built to match the client's source design mockup (`国际网页→BILLODIG（可视图）.pdf`, pages 3–10: BILLODIG homepage, nav, product lines, product detail, contact, news, videos) as closely as possible:
+Standalone WordPress theme for **billodig.com**, built to match the client's source design mockup (`国际网页→BILLODIG（可视图）.pdf`, pages 3–10: BILLODIG homepage, nav, product lines, product detail, contact, news) as closely as possible:
 
 - Navy (`#0b3c8c`) / red (`#d71a1a`) BILLODIG brand mark, matching the real logo asset
 - Black full-width "BILLODIG挖掘机"-style section banners on Products & Services / product-line / product-detail pages
-- Photo hero banner (equipment lineup on snow/mountains) reused across Home / Contact Us / News & Events / Videos, same as the mockup's shared slide header
+- Photo hero banner (equipment lineup on snow/mountains) reused across Home / Contact Us / News & Events, same as the mockup's shared slide header
 - Navy card footer bands + black "Learn more / 了解更多详情 →" buttons on product cards
 - Spec table layout on the product detail page (category / label / value columns, merged category cells, alternating shading) matching the mockup's engine/pump/valve/speed/tank spec sheet
 - Bilingual throughout: English primary, Chinese secondary (`.en` / `.zh` spans), per the site's actual audience (Ethiopia/Africa) while staying visually faithful to the Chinese-language mockup
@@ -14,13 +14,12 @@ This replaces the Billodig-facing templates that used to live inside the shared 
 ## Requirements
 
 - WordPress (standalone site, not Multisite-dependent — works fine installed on a Multisite network too)
-- **Secure Custom Fields** plugin (free ACF fork) — used for the repeater-based product spec fields and video URLs. Install & activate before switching to this theme, or the spec tables/video fields will be empty.
+- **Secure Custom Fields** plugin (free ACF fork) — used for the repeater-based product spec fields and per-product videos. Install & activate before switching to this theme, or the spec tables/video fields will be empty.
 
 ## What this theme registers
 
 - `product` custom post type (slug `excavators`) + `product_line` taxonomy (slug `product-line`) — same schema as the previous `billodig-mt` theme, so existing product content (the 6 real excavator models) keeps working unchanged after switching themes.
-- `billodig_video` custom post type — new, for the "精彩视频 / Videos" page (title + featured image + `video_url` + optional `caption_zh`).
-- Two Secure Custom Fields groups: **Product Specifications** (on `product`) and **Video** (on `billodig_video`).
+- One Secure Custom Fields group, **Product Specifications**, on `product` — the fixed spec fields, the two spec-table repeaters, and a `product_videos` repeater (video URL + optional thumbnail + Chinese caption) for that model's own work/operation videos, shown on its product detail page. There is no separate site-wide Videos section — videos live with the product they show, not as their own nav item.
 
 If migrating from `billodig-mt`, the existing `product_line` terms should already exist with slugs `gasoline`, `diesel`, `gas`, `cable`, `battery` — these slugs are hardcoded in `functions.php` (`billodig_line_zh()`) and in the Products & Services page template's card links. If recreating terms from scratch, use those exact slugs.
 
@@ -35,7 +34,6 @@ Create these pages and assign the matching **Page Attributes → Template**:
 | `products-services` | Billodig — Products & Services |
 | `contact-us` | Billodig — Contact Us |
 | `news-events` | Billodig — News & Events |
-| `videos` | Billodig — Videos |
 
 Set **Settings → Reading → Your homepage displays → A static page**, and pick any page as the front page (the theme's `front-page.php` template is used automatically regardless of content, since the design is fully coded).
 

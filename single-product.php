@@ -107,6 +107,32 @@ $tech_columns = array(
 </div>
 <?php endif; ?>
 
+<?php if ( have_rows( 'product_videos', $id ) ) : ?>
+<div class="section-head left" style="padding:0 56px;margin-bottom:24px;">
+	<div class="kicker">作业视频</div>
+	<h2 style="font-size:22px;">Work Videos</h2>
+	<div class="rule"></div>
+</div>
+<div class="video-grid">
+	<?php while ( have_rows( 'product_videos', $id ) ) : the_row();
+		$video_url = get_sub_field( 'video_url' );
+		$thumb     = get_sub_field( 'thumbnail' );
+		$caption_zh = get_sub_field( 'caption_zh' );
+		if ( ! $video_url ) {
+			continue;
+		}
+		?>
+		<a class="video-tile" href="<?php echo esc_url( $video_url ); ?>" target="_blank" rel="noopener">
+			<img src="<?php echo $thumb ? esc_url( $thumb ) : esc_url( get_the_post_thumbnail_url( $id, 'medium' ) ); ?>" alt="">
+			<div class="caption">
+				<span class="play"><svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M8 5 L19 12 L8 19 Z"></path></svg></span>
+				<span><span class="en">Work Video</span> <span class="zh"><?php echo esc_html( $caption_zh ?: '作业视频' ); ?></span></span>
+			</div>
+		</a>
+	<?php endwhile; ?>
+</div>
+<?php endif; ?>
+
 <div style="height:40px;"></div>
 
 <?php endwhile; get_footer(); ?>

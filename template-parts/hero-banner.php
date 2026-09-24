@@ -1,6 +1,6 @@
 <?php
 /**
- * Big photo hero banner, reused on Home / Contact Us / News & Events / Videos —
+ * Big photo hero banner, reused on Home / Contact Us / News & Events —
  * matches the mockup's "MEET FUTURE"-style full-bleed slide used as the shared
  * page header for all top-level sections.
  *

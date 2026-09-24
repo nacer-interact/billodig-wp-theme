@@ -11,7 +11,7 @@
 
 <?php
 $assets = get_stylesheet_directory_uri() . '/assets';
-$is_products_area = is_page( 'products-services' ) || is_post_type_archive( 'product' ) || is_singular( 'product' ) || is_tax( 'product_line' ) || is_page( 'contact-us' );
+$is_products_area = is_page( 'products-services' ) || is_post_type_archive( 'product' ) || is_singular( 'product' ) || is_tax( 'product_line' );
 ?>
 
 <div class="site-nav">
@@ -31,14 +31,13 @@ $is_products_area = is_page( 'products-services' ) || is_post_type_archive( 'pro
 				<a href="<?php echo esc_url( home_url( '/products-services/#fuel' ) ); ?>"><span class="en">Fuel-Powered Equipment</span><span class="zh">燃油版设备</span></a>
 				<a href="<?php echo esc_url( home_url( '/products-services/#electric' ) ); ?>"><span class="en">Electric Equipment</span><span class="zh">电动版设备</span></a>
 				<a href="<?php echo esc_url( home_url( '/products-services/#parts' ) ); ?>"><span class="en">Parts</span><span class="zh">配件</span></a>
-				<a href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>"><span class="en">Contact Us</span><span class="zh">联系我们</span></a>
 			</div>
 		</div>
 		<div class="navitem<?php echo is_page( 'news-events' ) || is_singular( 'post' ) ? ' active' : ''; ?>">
 			<?php billodig_navlink( home_url( '/news-events/' ), 'News & Events', '新闻与活动', is_page( 'news-events' ) || is_singular( 'post' ) ); ?>
 		</div>
-		<div class="navitem<?php echo is_page( 'videos' ) ? ' active' : ''; ?>">
-			<?php billodig_navlink( home_url( '/videos/' ), 'Videos', '精彩视频', is_page( 'videos' ) ); ?>
+		<div class="navitem<?php echo is_page( 'contact-us' ) ? ' active' : ''; ?>">
+			<?php billodig_navlink( home_url( '/contact-us/' ), 'Contact Us', '联系我们', is_page( 'contact-us' ) ); ?>
 		</div>
 	</div>
 	<details class="nav-search">
