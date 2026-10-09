@@ -9,8 +9,8 @@ add_action( 'after_setup_theme', function () {
 } );
 
 add_action( 'wp_enqueue_scripts', function () {
-	wp_enqueue_style( 'billodig-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap', array(), null );
-	wp_enqueue_style( 'billodig-style', get_stylesheet_uri(), array(), '1.0' );
+	wp_enqueue_style( 'billodig-fonts', 'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap', array(), null );
+	wp_enqueue_style( 'billodig-style', get_stylesheet_uri(), array(), '2.0-preview' );
 } );
 
 /**
