@@ -1,6 +1,10 @@
 <?php get_header();
 $assets = get_stylesheet_directory_uri() . '/assets';
-get_template_part( 'template-parts/hero-banner' );
+get_template_part( 'template-parts/hero-banner', null, array(
+	'en'    => 'Billodig Construction Machinery',
+	'tag'   => 'Hydraulic crawler excavators',
+	'photo' => 'catalog/page-03.jpg',
+) );
 ?>
 
 <div class="section">

@@ -16,7 +16,7 @@ $is_products_area = is_page( 'products-services' ) || is_post_type_archive( 'pro
 
 <div class="site-nav">
 	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo">
-		<img src="<?php echo esc_url( $assets . '/billodig-logo.png' ); ?>" alt="Billodig">
+		<img src="<?php echo esc_url( $assets . '/billodig-logo-white.png' ); ?>" alt="Billodig">
 	</a>
 	<div class="navlinks">
 		<div class="navitem<?php echo is_front_page() ? ' active' : ''; ?>">

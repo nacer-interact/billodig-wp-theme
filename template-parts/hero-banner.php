@@ -4,15 +4,16 @@
  * matches the mockup's "MEET FUTURE"-style full-bleed slide used as the shared
  * page header for all top-level sections.
  *
- * Expects $args: en, zh, tag (optional overline shown in white, e.g. tagline).
+ * Expects $args: en, zh, tag (optional overline), photo (path under assets/).
  */
 $assets = get_stylesheet_directory_uri() . '/assets';
 $en     = $args['en'] ?? '';
 $zh     = $args['zh'] ?? '';
 $tag    = $args['tag'] ?? 'THE MOST FUEL-EFFICIENT EXCAVATOR';
+$photo  = $args['photo'] ?? 'catalog/page-01.jpg';
 ?>
 <div class="hero-banner">
-	<img class="hero-photo" src="<?php echo esc_url( $assets . '/billodig-hero.jpg' ); ?>" alt="Billodig equipment lineup">
+	<img class="hero-photo" src="<?php echo esc_url( $assets . '/' . $photo ); ?>" alt="Billodig equipment lineup">
 	<?php if ( $en ) : ?>
 	<div class="hero-scrim"></div>
 	<div class="hero-overlay">
