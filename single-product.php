@@ -63,9 +63,11 @@ $tech_columns = array(
 		<div class="model-code"><?php the_title(); ?></div>
 		<div style="font-size:14px;color:var(--ink-soft);margin-bottom:20px;"><?php echo $f( 'subtitle' ); ?> · <?php echo $f( 'tagline' ); ?></div>
 		<div class="badges">
-			<div class="badge"><?php billodig_the_label( 'product.weight' ); ?><b><?php echo $f( 'working_weight' ); ?></b></div>
-			<div class="badge"><?php billodig_the_label( 'product.power' ); ?><b><?php echo $f( 'rated_power_full' ); ?></b></div>
-			<div class="badge"><?php billodig_the_label( 'product.bucket' ); ?><b><?php echo $f( 'bucket_capacity' ); ?></b></div>
+			<?php foreach ( array( 'working_weight' => 'product.weight', 'rated_power_full' => 'product.power', 'bucket_capacity' => 'product.bucket' ) as $field => $label_key ) : ?>
+				<?php if ( '' !== trim( (string) get_field( $field, $id ) ) ) : ?>
+			<div class="badge"><?php billodig_the_label( $label_key ); ?><b><?php echo $f( $field ); ?></b></div>
+				<?php endif; ?>
+			<?php endforeach; ?>
 		</div>
 		<div class="cta-row">
 			<a class="btn btn-primary" href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>"><?php billodig_the_label( 'product.quote' ); ?></a>
@@ -73,6 +75,12 @@ $tech_columns = array(
 		</div>
 	</div>
 </div>
+
+<?php if ( '' !== trim( get_the_content() ) ) : ?>
+<div class="product-description">
+	<?php the_content(); ?>
+</div>
+<?php endif; ?>
 
 <?php if ( ! empty( $main_spec_groups ) ) : ?>
 <div class="spectable">

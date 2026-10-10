@@ -18,7 +18,7 @@ $is_hot = get_field( 'is_hot', $id );
 	</div>
 	<div class="band">
 		<div class="code"><?php the_title(); ?></div>
-		<div class="spec"><?php echo esc_html( get_field( 'rated_power', $id ) ); ?> · <?php echo esc_html( get_field( 'bucket_capacity', $id ) ); ?></div>
+		<div class="spec"><?php echo esc_html( implode( ' · ', array_filter( array( get_field( 'rated_power', $id ), get_field( 'bucket_capacity', $id ) ) ) ) ); ?></div>
 	</div>
 	<a class="cta" href="<?php the_permalink(); ?>">
 		<?php billodig_the_label( 'common.learn_more' ); ?> →
