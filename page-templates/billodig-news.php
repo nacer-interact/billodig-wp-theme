@@ -2,8 +2,8 @@
 /* Template Name: Billodig — News & Events */
 get_header();
 get_template_part( 'template-parts/hero-banner', null, array(
-	'en' => 'News & Events',
-	'zh' => '新闻与活动',
+	'en' => billodig_t( 'nav.news' ),
+	'zh' => billodig_zh( 'nav.news' ),
 ) );
 
 $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
@@ -15,8 +15,8 @@ $news  = new WP_Query( array(
 ?>
 
 <div class="section-head" style="padding-top:56px;">
-	<div class="kicker">公司新闻</div>
-	<h2>Company News</h2>
+	<div class="kicker"><?php echo esc_html( billodig_zh( 'news.company' ) ); ?></div>
+	<h2><?php echo esc_html( billodig_t( 'news.company' ) ); ?></h2>
 	<div class="rule"></div>
 </div>
 
@@ -24,7 +24,7 @@ $news  = new WP_Query( array(
 <?php if ( $news->have_posts() ) : while ( $news->have_posts() ) : $news->the_post(); ?>
 	<a class="news-card" href="<?php the_permalink(); ?>">
 		<div class="thumb">
-			<span class="tag"><span class="en">Company News</span> <span class="zh">公司新闻</span></span>
+			<span class="tag"><?php billodig_the_label( 'news.company' ); ?></span>
 			<?php if ( has_post_thumbnail() ) : the_post_thumbnail( 'medium' ); else : ?>
 				<div style="width:100%;height:100%;background:var(--fog);"></div>
 			<?php endif; ?>
@@ -35,7 +35,7 @@ $news  = new WP_Query( array(
 		</div>
 	</a>
 <?php endwhile; else : ?>
-	<div class="empty-state">No news posted yet — check back soon, or follow us on WeChat/WhatsApp for updates.</div>
+	<div class="empty-state"><?php echo esc_html( billodig_t( 'news.empty' ) ); ?></div>
 <?php endif; wp_reset_postdata(); ?>
 </div>
 

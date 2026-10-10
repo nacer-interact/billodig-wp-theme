@@ -7,14 +7,13 @@
  *
  * Expects $args: en, zh, crumb (optional).
  */
-$assets = get_stylesheet_directory_uri() . '/assets';
 $en     = $args['en'] ?? '';
 $zh     = $args['zh'] ?? '';
 $crumb  = $args['crumb'] ?? '';
 ?>
 <div class="product-banner">
 	<div class="pb-photo">
-		<img src="<?php echo esc_url( $assets . '/billodig-worksite.jpg' ); ?>" alt="Billodig excavator">
+		<img src="<?php echo esc_url( billodig_image_url( 'product_banner_image', 'billodig-worksite.jpg' ) ); ?>" alt="<?php echo esc_attr( billodig_t( 'alt.excavator' ) ); ?>">
 	</div>
 	<div class="pb-text">
 		<?php if ( $crumb ) : ?><div class="pb-crumb"><?php echo esc_html( $crumb ); ?></div><?php endif; ?>

@@ -2,8 +2,8 @@
 /* Template Name: Billodig — About Us */
 get_header();
 get_template_part( 'template-parts/hero-banner', null, array(
-	'en' => 'About Us',
-	'zh' => '关于我们',
+	'en' => billodig_t( 'nav.about' ),
+	'zh' => billodig_zh( 'nav.about' ),
 ) );
 ?>
 

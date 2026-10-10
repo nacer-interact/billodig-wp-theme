@@ -4,16 +4,16 @@
  * matches the mockup's "MEET FUTURE"-style full-bleed slide used as the shared
  * page header for all top-level sections.
  *
- * Expects $args: en, zh, tag (optional overline), photo (path under assets/).
+ * Expects $args: en, zh, tag (optional overline), photo (full image URL).
+ * Defaults for tag/photo come from Customize > Billodig Theme Options > Page banners.
  */
-$assets = get_stylesheet_directory_uri() . '/assets';
-$en     = $args['en'] ?? '';
-$zh     = $args['zh'] ?? '';
-$tag    = $args['tag'] ?? 'THE MOST FUEL-EFFICIENT EXCAVATOR';
-$photo  = $args['photo'] ?? 'catalog/page-01.jpg';
+$en    = $args['en'] ?? '';
+$zh    = $args['zh'] ?? '';
+$tag   = $args['tag'] ?? billodig_mod( 'banner_tag' );
+$photo = $args['photo'] ?? billodig_image_url( 'banner_image', 'catalog/page-01.jpg' );
 ?>
 <div class="hero-banner">
-	<img class="hero-photo" src="<?php echo esc_url( $assets . '/' . $photo ); ?>" alt="Billodig equipment lineup">
+	<img class="hero-photo" src="<?php echo esc_url( $photo ); ?>" alt="<?php echo esc_attr( billodig_t( 'alt.hero' ) ); ?>">
 	<?php if ( $en ) : ?>
 	<div class="hero-scrim"></div>
 	<div class="hero-overlay">

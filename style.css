@@ -1,9 +1,17 @@
 /*
 Theme Name: Billodig
-Description: Standalone WordPress theme for billodig.com. Dark industrial look (black header, large-type heroes with a blue diagonal, red accents, spec-table product cards) taken from the first static prototype, applied on top of the existing menu and page structure. Bilingual (English primary, Chinese secondary).
+Theme URI: https://billodig.com
+Description: Standalone WordPress theme for billodig.com. Dark industrial look (black header, large-type heroes with a blue diagonal, red accents, spec-table product cards). Bilingual (English primary, Chinese secondary). Logo, Site Icon, menus, homepage texts and images, contact details, footer, social links and colours are editable in Appearance > Customize and Appearance > Menus.
 Author: Interact International (for Billodig / Fujian Kunyi Trading Co., Ltd)
-Version: 2.0-preview
+Author URI: https://interact-international.com
+Version: 2.1.0
+Requires at least: 6.0
+Tested up to: 6.8
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: billodig
+Tags: custom-logo, custom-menu, featured-images, translation-ready, one-column, threaded-comments
 */
 
 :root{
@@ -29,6 +37,9 @@ html{margin:0;scroll-behavior:smooth;}
 body{margin:0;font-family:Arial,Helvetica,"Noto Sans SC",sans-serif;background:var(--paper);color:var(--text);-webkit-font-smoothing:antialiased;}
 h1,h2,h3,h4{font-family:inherit;margin:0;}
 a{color:inherit;text-decoration:none;}
+.site-main{display:block;}
+.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal !important;}
+.screen-reader-text:focus,.skip-link:focus{background:#fff;clip:auto !important;clip-path:none;color:#000;display:block;font-size:14px;font-weight:700;height:auto;left:8px;line-height:normal;padding:12px 20px;top:8px;width:auto;z-index:100000;}
 img{max-width:100%;display:block;}
 button{font-family:inherit;}
 .wrap{width:100%;background:var(--paper);overflow-x:clip;}

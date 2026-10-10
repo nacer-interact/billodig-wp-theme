@@ -1,12 +1,12 @@
 <?php get_header();
 get_template_part( 'template-parts/hero-banner', null, array(
-	'en' => 'Search Results',
-	'zh' => '搜索结果',
+	'en' => billodig_t( 'search.title' ),
+	'zh' => billodig_zh( 'search.title' ),
 ) );
 ?>
 
 <div class="section-head" style="padding-top:56px;">
-	<h2><?php printf( '%d result(s) for “%s”', (int) $wp_query->found_posts, esc_html( get_search_query() ) ); ?></h2>
+	<h2><?php echo esc_html( sprintf( billodig_t( 'search.count' ), (int) $wp_query->found_posts, get_search_query() ) ); ?></h2>
 	<div class="rule"></div>
 </div>
 
@@ -26,7 +26,7 @@ get_template_part( 'template-parts/hero-banner', null, array(
 	<?php endwhile; ?>
 	</div>
 <?php else : ?>
-	<div class="empty-state">No results found. <a href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>">Contact us</a> and we'll help you find what you need.</div>
+	<div class="empty-state"><?php billodig_the_sentence_with_contact_link( 'search.none' ); ?></div>
 <?php endif; ?>
 
 <?php get_footer(); ?>

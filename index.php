@@ -6,7 +6,7 @@
 		<div class="content"><?php the_excerpt(); ?></div>
 	</article>
 <?php endwhile; else : ?>
-	<p>Nothing found.</p>
+	<p><?php echo esc_html( billodig_t( 'index.none' ) ); ?></p>
 <?php endif; ?>
 </div>
 <?php get_footer(); ?>

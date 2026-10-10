@@ -1,15 +1,15 @@
 <?php get_header();
 $term = get_queried_object();
 get_template_part( 'template-parts/product-banner', null, array(
-	'en'    => 'Billodig Excavators',
-	'zh'    => '挖掘机',
-	'crumb' => 'Products & Services / Excavators',
+	'en'    => billodig_t( 'catalog.banner' ),
+	'zh'    => billodig_zh( 'catalog.banner' ),
+	'crumb' => billodig_t( 'catalog.crumb' ),
 ) );
 ?>
 
 <div class="section-head" style="padding-top:56px;">
 	<div class="kicker"><?php echo esc_html( billodig_line_zh( $term->slug ) ); ?></div>
-	<h2><?php echo esc_html( $term->name ); ?> Excavators</h2>
+	<h2><?php echo esc_html( sprintf( billodig_t( 'catalog.line_title' ), $term->name ) ); ?></h2>
 	<div class="rule"></div>
 </div>
 
@@ -17,7 +17,7 @@ get_template_part( 'template-parts/product-banner', null, array(
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
 	get_template_part( 'template-parts/model-card' );
 endwhile; else : ?>
-	<div class="empty-state">No models in this line yet. <a href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>">Contact us</a> for availability.</div>
+	<div class="empty-state"><?php billodig_the_sentence_with_contact_link( 'catalog.empty_line' ); ?></div>
 <?php endif; ?>
 </div>
 

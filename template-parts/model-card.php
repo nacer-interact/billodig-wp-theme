@@ -8,7 +8,7 @@ $id     = get_the_ID();
 $is_hot = get_field( 'is_hot', $id );
 ?>
 <div class="model-card<?php echo $is_hot ? ' hot' : ''; ?>">
-	<?php if ( $is_hot ) : ?><div class="hot-badge">HOT</div><?php endif; ?>
+	<?php if ( $is_hot ) : ?><div class="hot-badge"><?php echo esc_html( billodig_t( 'common.hot' ) ); ?></div><?php endif; ?>
 	<div class="thumb">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'medium' ); ?>
@@ -21,6 +21,6 @@ $is_hot = get_field( 'is_hot', $id );
 		<div class="spec"><?php echo esc_html( get_field( 'rated_power', $id ) ); ?> · <?php echo esc_html( get_field( 'bucket_capacity', $id ) ); ?></div>
 	</div>
 	<a class="cta" href="<?php the_permalink(); ?>">
-		<span class="en">Learn More</span> <span class="zh">了解更多详情</span> →
+		<?php billodig_the_label( 'common.learn_more' ); ?> →
 	</a>
 </div>
