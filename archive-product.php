@@ -1,13 +1,13 @@
 <?php get_header();
 get_template_part( 'template-parts/product-banner', null, array(
-	'en' => 'Billodig Excavators',
-	'zh' => '挖掘机',
+	'en' => billodig_t( 'catalog.banner' ),
+	'zh' => billodig_zh( 'catalog.banner' ),
 ) );
 ?>
 
 <div class="section-head" style="padding-top:56px;">
-	<div class="kicker">全部型号</div>
-	<h2>All Excavator Models</h2>
+	<div class="kicker"><?php echo esc_html( billodig_zh( 'catalog.all_models' ) ); ?></div>
+	<h2><?php echo esc_html( billodig_t( 'catalog.all_models' ) ); ?></h2>
 	<div class="rule"></div>
 </div>
 
@@ -15,7 +15,7 @@ get_template_part( 'template-parts/product-banner', null, array(
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
 	get_template_part( 'template-parts/model-card' );
 endwhile; else : ?>
-	<div class="empty-state">No models published yet. <a href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>">Contact us</a> for availability.</div>
+	<div class="empty-state"><?php billodig_the_sentence_with_contact_link( 'catalog.empty' ); ?></div>
 <?php endif; ?>
 </div>
 

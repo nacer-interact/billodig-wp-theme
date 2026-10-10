@@ -39,6 +39,37 @@ Set **Settings → Reading → Your homepage displays → A static page**, and p
 
 News & Events pulls from standard WordPress posts (`post` type) — just publish blog posts as usual and they'll appear there, tagged "Company News / 公司新闻" as in the mockup.
 
+## Editing the site from wp-admin
+
+Nothing below changes how the site looks until someone edits a value. Every option defaults to the text, image or link that used to be hardcoded.
+
+| What | Where in wp-admin |
+|---|---|
+| Logo | Appearance > Customize > Site Identity (falls back to the bundled white logo) |
+| Site Icon (favicon) | Appearance > Customize > Site Identity |
+| Site title, tagline | Appearance > Customize > Site Identity |
+| Header menu | Appearance > Menus, assign to **Primary menu (header)** |
+| Footer "Quick Links" | Appearance > Menus, assign to **Footer quick links** |
+| Static front page | Appearance > Customize > Homepage Settings |
+| Homepage hero, product tiles, patents banner | Customize > Billodig Theme Options > Homepage: ... |
+| Inner-page banner text and images | Customize > Billodig Theme Options > Page banners |
+| Phone, WhatsApp, emails, offices | Customize > Billodig Theme Options > Contact details |
+| Footer text, copyright, social links | Customize > Billodig Theme Options > Footer / Social links |
+| Accent colours | Customize > Billodig Theme Options > Colours |
+
+**Menus.** Until a menu is assigned to a location, the theme shows its built-in default menu (Home, About Us, Products & Services with its dropdown, News & Events, Contact Us). Once you assign one, yours replaces it. Bilingual labels: the menu item's **Navigation Label** is the English text and its **Description** is the Chinese text (turn on "Description" under Screen Options at the top of Appearance > Menus if you do not see the box). Items nested one level deep become the dropdown. Products & Services stays highlighted on all product pages, and News & Events on single news posts.
+
+**Contact form.** Enquiries go to "Send enquiries to" (Contact details); if empty, to the site admin email in Settings > General.
+
+**Fixed interface text.** Labels that are not Customizer options (nav labels, product-page headings, button text, Contact page labels, empty-state messages and so on) live in one file, `inc/strings.php`, as `'key' => array( English, Chinese )`. Templates only reference the key, so changing a label never touches a template. Each entry is wrapped for translation, so it can be changed three ways without editing theme code: a `.po` file (use `languages/billodig.pot` as the template, e.g. with Loco Translate), a plugin or child theme hooking the `billodig_strings` filter, or by editing the entry directly. Example: `add_filter( 'billodig_strings', fn( $s ) => array_replace_recursive( $s, array( 'nav.contact' => array( 'Get in touch' ) ) ) );`
+
+Text that is editable in the Customizer has its default in `inc/defaults.php`, also wrapped for translation. Page and post body text is edited in the normal WordPress editors.
+
+## Code layout
+
+- `functions.php` loads everything in `inc/`: `setup.php` (theme supports, menu locations, assets), `post-types.php`, `fields.php` (Secure Custom Fields), `defaults.php` (default values for the Customizer options), `strings.php` (all fixed interface text, bilingual and translatable), `template-tags.php` (helpers and menu fallbacks), `class-billodig-walker-nav.php` (menu markup), `customizer.php`.
+- `languages/billodig.pot` is the translation template (text domain `billodig`).
+
 ## Assets
 
 `assets/` contains the real Billodig brand and product assets carried over from the prior design work: `billodig-logo.png` (source logo), `billodig-logo-white.png` (a generated reversed/white variant for the dark footer — background removed and navy strokes recolored to white, red triangle kept as-is), the hero and worksite photography, and the six product photos (`10lc`, `60ec`, `150ec`, `ec260lc`, `ec360`, `ec450lc`).

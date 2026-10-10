@@ -1,0 +1,1090 @@
+# Copyright (C) 2026 Interact International (for Billodig / Fujian Kunyi Trading Co., Ltd)
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Billodig 2.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/billodig\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-10T16:12:32+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: billodig\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Billodig"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://billodig.com"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Standalone WordPress theme for billodig.com. Dark industrial look (black header, large-type heroes with a blue diagonal, red accents, spec-table product cards). Bilingual (English primary, Chinese secondary). Logo, Site Icon, menus, homepage texts and images, contact details, footer, social links and colours are editable in Appearance > Customize and Appearance > Menus."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Interact International (for Billodig / Fujian Kunyi Trading Co., Ltd)"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://interact-international.com"
+msgstr ""
+
+#: inc/customizer.php:70
+msgid "Billodig Theme Options"
+msgstr ""
+
+#: inc/customizer.php:71
+msgid "Texts, images, contact details and colours used across the site. Leave a field as it is to keep the default."
+msgstr ""
+
+#: inc/customizer.php:77
+msgid "Homepage: Hero banner"
+msgstr ""
+
+#: inc/customizer.php:78
+msgid "Headline"
+msgstr ""
+
+#: inc/customizer.php:79
+msgid "Tagline under the headline"
+msgstr ""
+
+#: inc/customizer.php:80
+msgid "Background image"
+msgstr ""
+
+#: inc/customizer.php:80
+msgid "Wide photo, about 1600 x 700 px. Leave empty to keep the bundled image."
+msgstr ""
+
+#: inc/customizer.php:83
+msgid "Homepage: Machinery Products"
+msgstr ""
+
+#: inc/customizer.php:84
+#: inc/customizer.php:97
+msgid "Section label (Chinese)"
+msgstr ""
+
+#: inc/customizer.php:85
+#: inc/customizer.php:98
+msgid "Section title"
+msgstr ""
+
+#. translators: %d: tile number
+#: inc/customizer.php:88
+#, php-format
+msgid "Tile %d: English name"
+msgstr ""
+
+#. translators: %d: tile number
+#: inc/customizer.php:90
+#, php-format
+msgid "Tile %d: Chinese name"
+msgstr ""
+
+#. translators: %d: tile number
+#: inc/customizer.php:92
+#, php-format
+msgid "Tile %d: link"
+msgstr ""
+
+#. translators: %d: tile number
+#: inc/customizer.php:92
+msgid "Leave empty to link to the product catalogue."
+msgstr ""
+
+#. translators: %d: tile number
+#: inc/customizer.php:92
+msgid "Leave empty to link to the Contact Us page."
+msgstr ""
+
+#: inc/customizer.php:96
+msgid "Homepage: Patents banner"
+msgstr ""
+
+#: inc/customizer.php:99
+msgid "Photo"
+msgstr ""
+
+#: inc/customizer.php:100
+msgid "Panel heading"
+msgstr ""
+
+#: inc/customizer.php:101
+msgid "Panel text"
+msgstr ""
+
+#: inc/customizer.php:104
+msgid "Page banners"
+msgstr ""
+
+#: inc/customizer.php:105
+msgid "Banner overline text"
+msgstr ""
+
+#: inc/customizer.php:105
+msgid "Small text above the title on Contact Us, News & Events, About Us and standard pages."
+msgstr ""
+
+#: inc/customizer.php:106
+msgid "Banner image"
+msgstr ""
+
+#: inc/customizer.php:106
+msgid "Used behind the title on inner pages."
+msgstr ""
+
+#: inc/customizer.php:107
+msgid "Products banner photo"
+msgstr ""
+
+#: inc/customizer.php:107
+msgid "Excavator photo in the black banner on Products & Services and product pages."
+msgstr ""
+
+#: inc/customizer.php:110
+msgid "Contact details"
+msgstr ""
+
+#: inc/customizer.php:111
+msgid "Phone / WeChat number"
+msgstr ""
+
+#: inc/customizer.php:111
+msgid "Shown in the footer and on Contact Us; also used for the call link."
+msgstr ""
+
+#: inc/customizer.php:112
+msgid "WhatsApp number"
+msgstr ""
+
+#: inc/customizer.php:112
+msgid "Include the country code. Used for the wa.me chat link."
+msgstr ""
+
+#: inc/customizer.php:113
+msgid "Public email address"
+msgstr ""
+
+#: inc/customizer.php:113
+msgid "Shown on Contact Us. Empty = the site admin email (Settings > General)."
+msgstr ""
+
+#: inc/customizer.php:114
+msgid "Send enquiries to"
+msgstr ""
+
+#: inc/customizer.php:114
+msgid "Where Contact Us form messages are delivered. Empty = the site admin email."
+msgstr ""
+
+#: inc/customizer.php:115
+msgid "China office (Contact Us page)"
+msgstr ""
+
+#: inc/customizer.php:115
+msgid "One line per row."
+msgstr ""
+
+#: inc/customizer.php:116
+msgid "Ethiopia office (Contact Us page)"
+msgstr ""
+
+#: inc/customizer.php:119
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer.php:119
+msgid "The Quick Links column is a menu: assign one to \"Footer quick links\" under Menus."
+msgstr ""
+
+#: inc/customizer.php:120
+msgid "About text"
+msgstr ""
+
+#: inc/customizer.php:121
+msgid "Office line 1"
+msgstr ""
+
+#: inc/customizer.php:122
+msgid "Office line 2"
+msgstr ""
+
+#: inc/customizer.php:123
+msgid "Copyright text"
+msgstr ""
+
+#: inc/customizer.php:123
+msgid "The \"©\" sign and current year are added automatically."
+msgstr ""
+
+#: inc/customizer.php:126
+msgid "Social links"
+msgstr ""
+
+#: inc/customizer.php:126
+msgid "Footer icons. Clear a field to hide that icon."
+msgstr ""
+
+#: inc/customizer.php:132
+msgid "Colours"
+msgstr ""
+
+#: inc/customizer.php:133
+msgid "Accent red (buttons, active links)"
+msgstr ""
+
+#: inc/customizer.php:134
+msgid "Accent red, dark shade"
+msgstr ""
+
+#: inc/customizer.php:135
+msgid "Blue (hero diagonal, headings)"
+msgstr ""
+
+#: inc/customizer.php:136
+msgid "Blue, dark shade"
+msgstr ""
+
+#: inc/customizer.php:137
+msgid "Black (header, footer, tables)"
+msgstr ""
+
+#: inc/defaults.php:20
+msgid "Billodig Construction Machinery"
+msgstr ""
+
+#: inc/defaults.php:21
+msgid "Hydraulic crawler excavators"
+msgstr ""
+
+#: inc/defaults.php:25
+msgid "THE MOST FUEL-EFFICIENT EXCAVATOR"
+msgstr ""
+
+#: inc/defaults.php:30
+msgctxt "Chinese text: products_kicker"
+msgid "机械产品"
+msgstr ""
+
+#: inc/defaults.php:31
+msgid "Machinery Products"
+msgstr ""
+
+#: inc/defaults.php:32
+msgid "Excavators"
+msgstr ""
+
+#: inc/defaults.php:33
+msgctxt "Chinese text: tile_1_zh"
+msgid "挖掘机"
+msgstr ""
+
+#: inc/defaults.php:35
+msgid "Loaders"
+msgstr ""
+
+#: inc/defaults.php:36
+msgctxt "Chinese text: tile_2_zh"
+msgid "装载机"
+msgstr ""
+
+#: inc/defaults.php:38
+msgid "Attachments"
+msgstr ""
+
+#: inc/defaults.php:39
+msgctxt "Chinese text: tile_3_zh"
+msgid "工程机械属具"
+msgstr ""
+
+#: inc/defaults.php:41
+msgid "Used Excavators"
+msgstr ""
+
+#: inc/defaults.php:42
+msgctxt "Chinese text: tile_4_zh"
+msgid "二手挖掘机"
+msgstr ""
+
+#: inc/defaults.php:44
+#: inc/strings.php:113
+msgid "Excavator Parts"
+msgstr ""
+
+#: inc/defaults.php:45
+msgctxt "Chinese text: tile_5_zh"
+msgid "挖掘机配件"
+msgstr ""
+
+#: inc/defaults.php:49
+msgid "BILLODIG专利"
+msgstr ""
+
+#: inc/defaults.php:50
+msgid "Billodig Patents"
+msgstr ""
+
+#: inc/defaults.php:52
+msgid "THE WINNING PLAYER IN GENERAL WORK · 一家全球化工程机械装备制造商"
+msgstr ""
+
+#: inc/defaults.php:53
+msgid "A global construction machinery equipment manufacturer and solutions provider, focused on overseas market expansion and localization services."
+msgstr ""
+
+#: inc/defaults.php:60
+msgid ""
+"Fujian Kunyi Trading Co., Ltd\n"
+"Fuzhou, Fujian, China"
+msgstr ""
+
+#: inc/defaults.php:61
+msgid "Addis Ababa, Ethiopia"
+msgstr ""
+
+#: inc/defaults.php:64
+msgid "A Billodig excavator & heavy machinery brand of Fujian Kunyi Trading Co., Ltd (福建省鲲亿贸易有限公司), focused on fuel-efficient, reliable engineering equipment for overseas markets."
+msgstr ""
+
+#: inc/defaults.php:65
+msgid "Fuzhou, Fujian, China 福建福州"
+msgstr ""
+
+#: inc/defaults.php:66
+msgid "Addis Ababa, Ethiopia 埃塞俄比亚亚的斯亚贝巴"
+msgstr ""
+
+#: inc/defaults.php:67
+msgid "Billodig — Fujian Kunyi Trading Co., Ltd. All rights reserved."
+msgstr ""
+
+#: inc/fields.php:24
+msgid "Category tag"
+msgstr ""
+
+#: inc/fields.php:24
+msgid "e.g. Fuel-powered · Diesel"
+msgstr ""
+
+#: inc/fields.php:25
+msgid "Marketing tagline"
+msgstr ""
+
+#: inc/fields.php:26
+msgid "Featured / HOT badge"
+msgstr ""
+
+#: inc/fields.php:27
+#: inc/strings.php:88
+msgid "Working weight"
+msgstr ""
+
+#: inc/fields.php:27
+msgid "e.g. 34,700 kg"
+msgstr ""
+
+#: inc/fields.php:28
+msgid "Rated power (short)"
+msgstr ""
+
+#: inc/fields.php:28
+msgid "e.g. 194 kW"
+msgstr ""
+
+#: inc/fields.php:29
+msgid "Rated power (full)"
+msgstr ""
+
+#: inc/fields.php:29
+msgid "e.g. 194 kW (260 HP) / 2,200 rpm"
+msgstr ""
+
+#: inc/fields.php:30
+#: inc/strings.php:90
+msgid "Bucket capacity"
+msgstr ""
+
+#: inc/fields.php:30
+msgid "e.g. 1.6 m³"
+msgstr ""
+
+#: inc/fields.php:31
+msgid "Engine model"
+msgstr ""
+
+#: inc/fields.php:37
+msgid "The categorized spec table (Engine, Main pump, Pilot pump, Relief valve, Speed, Tank capacity…). Rows sharing the same category are grouped together automatically."
+msgstr ""
+
+#: inc/fields.php:39
+msgid "Add specification row"
+msgstr ""
+
+#: inc/fields.php:41
+msgid "Category"
+msgstr ""
+
+#: inc/fields.php:41
+msgid "e.g. Engine, Main pump, Relief valve"
+msgstr ""
+
+#: inc/fields.php:42
+msgid "Category (Chinese)"
+msgstr ""
+
+#: inc/fields.php:42
+msgid "e.g. 发动机, 主泵, 溢流阀"
+msgstr ""
+
+#: inc/fields.php:43
+#: inc/fields.php:56
+msgid "Label"
+msgstr ""
+
+#: inc/fields.php:44
+#: inc/fields.php:57
+msgid "Value"
+msgstr ""
+
+#: inc/fields.php:52
+msgid "The flat dimensions / digging-geometry table."
+msgstr ""
+
+#: inc/fields.php:54
+msgid "Add parameter row"
+msgstr ""
+
+#: inc/fields.php:65
+msgid "Work/operation videos for this specific model — shown on its product page, not as a separate site section."
+msgstr ""
+
+#: inc/fields.php:67
+msgid "Add video"
+msgstr ""
+
+#: inc/fields.php:69
+msgid "Video URL"
+msgstr ""
+
+#: inc/fields.php:69
+msgid "YouTube/Vimeo link or a direct video file URL."
+msgstr ""
+
+#: inc/fields.php:70
+msgid "Thumbnail"
+msgstr ""
+
+#: inc/fields.php:71
+msgid "Caption (Chinese)"
+msgstr ""
+
+#: inc/fields.php:71
+msgid "e.g. 作业视频"
+msgstr ""
+
+#: inc/post-types.php:16
+msgctxt "post type general name"
+msgid "Products"
+msgstr ""
+
+#: inc/post-types.php:17
+msgctxt "post type singular name"
+msgid "Product"
+msgstr ""
+
+#: inc/post-types.php:18
+msgid "Add New Product"
+msgstr ""
+
+#: inc/post-types.php:19
+msgid "Edit Product"
+msgstr ""
+
+#: inc/post-types.php:30
+msgctxt "taxonomy general name"
+msgid "Product Lines"
+msgstr ""
+
+#: inc/post-types.php:31
+msgctxt "taxonomy singular name"
+msgid "Product Line"
+msgstr ""
+
+#: inc/setup.php:34
+msgid "Primary menu (header)"
+msgstr ""
+
+#: inc/setup.php:35
+msgid "Footer quick links"
+msgstr ""
+
+#: inc/strings.php:33
+msgid "Skip to content"
+msgstr ""
+
+#: inc/strings.php:34
+msgid "Search"
+msgstr ""
+
+#: inc/strings.php:35
+msgid "Submit search"
+msgstr ""
+
+#: inc/strings.php:36
+msgid "Search products…"
+msgstr ""
+
+#: inc/strings.php:37
+msgid "Search Results"
+msgstr ""
+
+#: inc/strings.php:37
+msgctxt "Chinese label: Search Results"
+msgid "搜索结果"
+msgstr ""
+
+#. translators: 1: number of results, 2: search term
+#: inc/strings.php:39
+#, php-format
+msgid "%1$d result(s) for “%2$s”"
+msgstr ""
+
+#. translators: %s: "Contact us" link
+#: inc/strings.php:41
+#, php-format
+msgid "No results found. %s and we'll help you find what you need."
+msgstr ""
+
+#: inc/strings.php:42
+msgid "Nothing found."
+msgstr ""
+
+#: inc/strings.php:45
+msgid "Home"
+msgstr ""
+
+#: inc/strings.php:45
+msgctxt "Chinese label: Home"
+msgid "首页"
+msgstr ""
+
+#: inc/strings.php:46
+msgid "About Us"
+msgstr ""
+
+#: inc/strings.php:46
+msgctxt "Chinese label: About Us"
+msgid "关于我们"
+msgstr ""
+
+#: inc/strings.php:47
+msgid "Products & Services"
+msgstr ""
+
+#: inc/strings.php:47
+msgctxt "Chinese label: Products & Services"
+msgid "产品与服务"
+msgstr ""
+
+#: inc/strings.php:48
+#: inc/strings.php:106
+msgid "Fuel-Powered Equipment"
+msgstr ""
+
+#: inc/strings.php:48
+msgctxt "Chinese label: Fuel-Powered Equipment (menu)"
+msgid "燃油版设备"
+msgstr ""
+
+#: inc/strings.php:49
+#: inc/strings.php:107
+msgid "Electric Equipment"
+msgstr ""
+
+#: inc/strings.php:49
+msgctxt "Chinese label: Electric Equipment (menu)"
+msgid "电动版设备"
+msgstr ""
+
+#: inc/strings.php:50
+msgid "Parts"
+msgstr ""
+
+#: inc/strings.php:50
+msgctxt "Chinese label: Parts"
+msgid "配件"
+msgstr ""
+
+#: inc/strings.php:51
+msgid "News & Events"
+msgstr ""
+
+#: inc/strings.php:51
+msgctxt "Chinese label: News & Events"
+msgid "新闻与活动"
+msgstr ""
+
+#: inc/strings.php:52
+msgid "Contact Us"
+msgstr ""
+
+#: inc/strings.php:52
+msgctxt "Chinese label: Contact Us"
+msgid "联系我们"
+msgstr ""
+
+#: inc/strings.php:55
+msgid "BILLODIG"
+msgstr ""
+
+#: inc/strings.php:56
+msgid "Contact"
+msgstr ""
+
+#: inc/strings.php:56
+msgctxt "Chinese label: Contact (footer column)"
+msgid "联系方式"
+msgstr ""
+
+#: inc/strings.php:57
+msgid "Tel / WeChat:"
+msgstr ""
+
+#: inc/strings.php:58
+msgid "WhatsApp:"
+msgstr ""
+
+#: inc/strings.php:59
+msgid "Offices"
+msgstr ""
+
+#: inc/strings.php:59
+msgctxt "Chinese label: Offices"
+msgid "办事处"
+msgstr ""
+
+#: inc/strings.php:60
+msgid "Quick Links"
+msgstr ""
+
+#: inc/strings.php:63
+msgid "Billodig equipment lineup"
+msgstr ""
+
+#: inc/strings.php:64
+msgid "Billodig excavators on site"
+msgstr ""
+
+#: inc/strings.php:65
+msgid "Billodig excavator"
+msgstr ""
+
+#: inc/strings.php:66
+msgid "Gasoline excavator"
+msgstr ""
+
+#: inc/strings.php:67
+msgid "Diesel excavator"
+msgstr ""
+
+#: inc/strings.php:70
+msgid "HOT"
+msgstr ""
+
+#: inc/strings.php:71
+msgid "Learn More"
+msgstr ""
+
+#: inc/strings.php:71
+msgctxt "Chinese label: Learn More"
+msgid "了解更多详情"
+msgstr ""
+
+#: inc/strings.php:72
+msgid "Enquire"
+msgstr ""
+
+#: inc/strings.php:72
+msgctxt "Chinese label: Enquire"
+msgid "咨询"
+msgstr ""
+
+#: inc/strings.php:73
+msgid "Contact us"
+msgstr ""
+
+#: inc/strings.php:76
+msgid "Billodig Excavators"
+msgstr ""
+
+#: inc/strings.php:76
+msgctxt "Chinese label: Excavators"
+msgid "挖掘机"
+msgstr ""
+
+#: inc/strings.php:77
+msgid "Products & Services / Excavators"
+msgstr ""
+
+#: inc/strings.php:78
+msgid "All Excavator Models"
+msgstr ""
+
+#: inc/strings.php:78
+msgctxt "Chinese label: All models"
+msgid "全部型号"
+msgstr ""
+
+#. translators: %s: product line name, e.g. "Diesel"
+#: inc/strings.php:80
+#, php-format
+msgid "%s Excavators"
+msgstr ""
+
+#. translators: %s: "Contact us" link
+#: inc/strings.php:82
+#, php-format
+msgid "No models published yet. %s for availability."
+msgstr ""
+
+#. translators: %s: "Contact us" link
+#: inc/strings.php:84
+#, php-format
+msgid "No models in this line yet. %s for availability."
+msgstr ""
+
+#: inc/strings.php:87
+msgid "Search by keyword…"
+msgstr ""
+
+#: inc/strings.php:87
+msgctxt "Chinese label: enter a product keyword"
+msgid "请输入产品关键词搜索"
+msgstr ""
+
+#: inc/strings.php:88
+msgctxt "Chinese label: Working weight"
+msgid "整机重量"
+msgstr ""
+
+#: inc/strings.php:89
+msgid "Rated power"
+msgstr ""
+
+#: inc/strings.php:89
+msgctxt "Chinese label: Rated power"
+msgid "额定功率"
+msgstr ""
+
+#: inc/strings.php:90
+msgctxt "Chinese label: Bucket capacity"
+msgid "铲斗容量"
+msgstr ""
+
+#: inc/strings.php:91
+msgid "Request a Quote"
+msgstr ""
+
+#: inc/strings.php:91
+msgctxt "Chinese label: Request a Quote"
+msgid "获取报价"
+msgstr ""
+
+#: inc/strings.php:92
+msgid "Download Spec Sheet"
+msgstr ""
+
+#: inc/strings.php:92
+msgctxt "Chinese label: Download Spec Sheet"
+msgid "下载规格表"
+msgstr ""
+
+#: inc/strings.php:93
+msgid "Main Specifications"
+msgstr ""
+
+#: inc/strings.php:93
+msgctxt "Chinese label: Main Specifications"
+msgid "主要参数"
+msgstr ""
+
+#: inc/strings.php:94
+msgid "Technical Parameters"
+msgstr ""
+
+#: inc/strings.php:94
+msgctxt "Chinese label: Technical Parameters"
+msgid "技术参数"
+msgstr ""
+
+#: inc/strings.php:95
+msgid "Work Videos"
+msgstr ""
+
+#: inc/strings.php:95
+msgctxt "Chinese label: Work Videos (section)"
+msgid "作业视频"
+msgstr ""
+
+#: inc/strings.php:96
+msgid "Work Video"
+msgstr ""
+
+#: inc/strings.php:96
+msgctxt "Chinese label: Work Video (default caption)"
+msgid "作业视频"
+msgstr ""
+
+#: inc/strings.php:99
+msgctxt "Chinese name of the Gasoline product line"
+msgid "汽油挖掘机"
+msgstr ""
+
+#: inc/strings.php:100
+msgctxt "Chinese name of the Diesel product line"
+msgid "柴油挖掘机"
+msgstr ""
+
+#: inc/strings.php:101
+msgctxt "Chinese name of the Gas product line"
+msgid "GAS挖掘机"
+msgstr ""
+
+#: inc/strings.php:102
+msgctxt "Chinese name of the Cable product line"
+msgid "电缆式挖掘机"
+msgstr ""
+
+#: inc/strings.php:103
+msgctxt "Chinese name of the Battery product line"
+msgid "电池式挖掘机"
+msgstr ""
+
+#: inc/strings.php:106
+msgctxt "Chinese heading: fuel-powered excavator line"
+msgid "燃油版设备挖掘机产品线"
+msgstr ""
+
+#: inc/strings.php:107
+msgctxt "Chinese heading: electric excavator line"
+msgid "电动版设备挖掘机产品线"
+msgstr ""
+
+#: inc/strings.php:108
+msgid "Gasoline Excavator"
+msgstr ""
+
+#: inc/strings.php:108
+msgctxt "Chinese card label: Gasoline Excavator"
+msgid "汽油挖掘机"
+msgstr ""
+
+#: inc/strings.php:109
+msgid "Diesel Excavator"
+msgstr ""
+
+#: inc/strings.php:109
+msgctxt "Chinese card label: Diesel Excavator"
+msgid "柴油挖掘机"
+msgstr ""
+
+#: inc/strings.php:110
+msgid "GAS Excavator"
+msgstr ""
+
+#: inc/strings.php:110
+msgctxt "Chinese card label: GAS Excavator (coming soon)"
+msgid "GAS挖掘机 · coming soon"
+msgstr ""
+
+#: inc/strings.php:111
+msgid "Cable Excavator"
+msgstr ""
+
+#: inc/strings.php:111
+msgctxt "Chinese card label: Cable Excavator (coming soon)"
+msgid "电缆式挖掘机 · coming soon"
+msgstr ""
+
+#: inc/strings.php:112
+msgid "Battery Excavator"
+msgstr ""
+
+#: inc/strings.php:112
+msgctxt "Chinese card label: Battery Excavator (coming soon)"
+msgid "电池式挖掘机 · coming soon"
+msgstr ""
+
+#: inc/strings.php:113
+msgctxt "Chinese card label: Excavator Parts"
+msgid "挖掘机配件"
+msgstr ""
+
+#: inc/strings.php:116
+msgid "Company News"
+msgstr ""
+
+#: inc/strings.php:116
+msgctxt "Chinese label: Company News"
+msgid "公司新闻"
+msgstr ""
+
+#: inc/strings.php:117
+msgid "No news posted yet — check back soon, or follow us on WeChat/WhatsApp for updates."
+msgstr ""
+
+#: inc/strings.php:118
+msgid "Back to News & Events"
+msgstr ""
+
+#: inc/strings.php:118
+msgctxt "Chinese label: Back to News & Events"
+msgid "返回新闻与活动"
+msgstr ""
+
+#: inc/strings.php:121
+msgid "CONTACT US"
+msgstr ""
+
+#: inc/strings.php:122
+msgid "Contact Information"
+msgstr ""
+
+#: inc/strings.php:122
+msgctxt "Chinese label: Contact Information"
+msgid "联系我们"
+msgstr ""
+
+#: inc/strings.php:123
+msgid "If you have any product enquiries or after-sales needs, please get in touch — thank you for your support."
+msgstr ""
+
+#: inc/strings.php:123
+msgctxt "Chinese: contact page intro"
+msgid "如果有任何产品咨询和售后方面的需求请您与我们取得联系，感谢您的支持~"
+msgstr ""
+
+#: inc/strings.php:124
+msgid "Thank you — your inquiry has been sent. We'll be in touch shortly."
+msgstr ""
+
+#: inc/strings.php:125
+msgid "Your name"
+msgstr ""
+
+#: inc/strings.php:125
+msgctxt "Chinese label: Your name (required)"
+msgid "您的姓名 *"
+msgstr ""
+
+#: inc/strings.php:126
+msgid "Your phone"
+msgstr ""
+
+#: inc/strings.php:126
+msgctxt "Chinese label: Your phone (required)"
+msgid "您的电话 *"
+msgstr ""
+
+#: inc/strings.php:127
+msgid "Message"
+msgstr ""
+
+#: inc/strings.php:127
+msgctxt "Chinese label: Message"
+msgid "留言内容"
+msgstr ""
+
+#: inc/strings.php:128
+msgid "Submit Now"
+msgstr ""
+
+#: inc/strings.php:128
+msgctxt "Chinese label: Submit Now"
+msgid "立即提交"
+msgstr ""
+
+#: inc/strings.php:129
+msgid "TEL / WECHAT"
+msgstr ""
+
+#: inc/strings.php:129
+msgctxt "Chinese label: Phone"
+msgid "电话"
+msgstr ""
+
+#: inc/strings.php:130
+msgid "WHATSAPP"
+msgstr ""
+
+#: inc/strings.php:131
+msgid "EMAIL"
+msgstr ""
+
+#: inc/strings.php:131
+msgctxt "Chinese label: Email"
+msgid "邮箱"
+msgstr ""
+
+#: inc/strings.php:132
+msgid "CHINA OFFICE"
+msgstr ""
+
+#: inc/strings.php:132
+msgctxt "Chinese label: China office"
+msgid "中国办事处"
+msgstr ""
+
+#: inc/strings.php:133
+msgid "ETHIOPIA OFFICE"
+msgstr ""
+
+#: inc/strings.php:133
+msgctxt "Chinese label: Ethiopia office"
+msgid "埃塞俄比亚办事处"
+msgstr ""
+
+#. translators: %s: sender name
+#: inc/strings.php:135
+#, php-format
+msgid "New Billodig inquiry from %s"
+msgstr ""
+
+#. translators: 1: sender name, 2: sender phone, 3: message
+#: inc/strings.php:137
+#, php-format
+msgid ""
+"Name: %1$s\n"
+"Phone: %2$s\n"
+"\n"
+"Message:\n"
+"%3$s"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Billodig — About Us"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Billodig — Contact Us"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Billodig — News & Events"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Billodig — Products & Services"
+msgstr ""
